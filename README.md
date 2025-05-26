@@ -4,7 +4,7 @@ This project focuses on estimating the total number of active GitHub users using
 
 The methodology involves dividing the ID space into fixed-size buckets, sampling with replacement, performing an exhaustive search within each sampled bucket, and using the resulting statistics to predict an estimate for the entire user base. The approach is validated on a smaller known range and then scaled to the entire ID space to evaluate consistency, reliability, and scalability of our method.
 
-## Contents  
+## Contents & Results 
 - `GH-active-user-est-validation.ipynb` - Runs the sampling + estimation method over a known GitHub ID range [1, 10,000]. Compares estimated total against actual ground truth and also includes bar plots to show bucket distributions.
 
 - **Output:** Estimated total: `~9376`    Ground truth: `9390`
